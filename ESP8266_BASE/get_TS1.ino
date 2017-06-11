@@ -76,10 +76,13 @@ void get_TS1(){
                           for(i=1;i<=green[0];i++){
                             g=g*10+green[i]-48;
                           }
-              
+                          Serial.print("RED : ");
                           Serial.println(r);
+                          Serial.print("GREEN : ");
+                          Serial.println(g); 
+                          Serial.print("BLUE : ");
                           Serial.println(b);
-                          Serial.println(g);  
+                           
                           //that's it!!
               
                           analogWrite(redPin,r);
